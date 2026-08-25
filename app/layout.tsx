@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const incoming = await headers();
   const host = incoming.get("host") ?? "localhost:3000";
   const origin = `${host.includes("localhost") ? "http" : "https"}://${host}`;
-  const title = "企策通｜科技政策服务平台";
+  const title = "中知院｜科技政策服务平台";
   const description = "面向科技企业的政策知识、智能匹配与条件诊断平台";
   return {
     metadataBase: new URL(origin),
