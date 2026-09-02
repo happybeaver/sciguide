@@ -1155,6 +1155,38 @@ input[type="checkbox"] { accent-color: var(--brand-blue); }
 .project-progress .active { color: var(--brand-navy); }
 .project-progress .done i { background: #278a78; color: #fff; }
 .project-progress .active i { background: var(--brand-blue); color: #fff; }
+.project-draft-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  background: #f3f9fb;
+}
+.project-draft-entry > span {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  background: var(--brand-navy);
+  color: #62c8ed;
+  font-size: 15px;
+}
+.project-draft-entry b { color: var(--brand-navy); font-size: 10px; }
+.project-draft-entry p { margin: 4px 0 0; color: #748993; font-size: 8px; }
+.project-draft-entry button {
+  margin-left: auto;
+  border: 0;
+  border-radius: 3px;
+  padding: 9px 15px;
+  background: var(--brand-navy);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+}
+.project-draft-entry.ready { background: #eef8f5; }
+.project-draft-entry.ready > span { background: #278a78; color: #fff; }
 .collection-task-drawer { background: #f5f9fa; }
 .task-source-summary { border-radius: 4px; background: var(--brand-navy); }
 .task-state,
